@@ -2,14 +2,32 @@
   "name": "threads",
   "version": "0.0.0",
   "description": "Crawling different men's clothing shops.",
-  "main": "index.js",
+  "main": "lib/threads/threads.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node lib/threads/threads.js",
+    "build": "grunt",
+    "test": "mocha"
   },
   "keywords": [
     "crawler",
     "malefashion"
   ],
   "author": "Shane Warren",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "mocha": "^1.21.3",
+    "should": "^4.0.4"
+  },
+  "devDependencies": {
+    "bl": "^0.9.1",
+    "cheerio": "^0.17.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-execute": "^0.2.2",
+    "grunt-mocha-test": "^0.11.0",
+    "grunt-shell": "^1.0.1",
+    "should": "^4.0.4",
+    "simplecrawler": "^0.3.9"
+  }
 }
