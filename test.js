@@ -1,3 +1,15 @@
-var utils = require('./tests/utility');
+var p = require('./lib/threads/phantom'),
+    j = require('./lib/threads/stores/jcrew');
 
-utils.createFixtureFromUrl("https://www.jcrew.com/mens_feature/TheQuiltedJacket/PRDOVR~B0596/B0596.jsp", "jcrew-quilted-jacket")
+
+var ph = new p.PhantomWrapper();
+var jc = new j.JCrew();
+ph.startPhantom(function(){
+  ph.getHtml("https://www.jcrew.com/mens_category/shoes/PRD~A1214/A1214.jsp", function(err, html){
+      jc.parse(html);
+      console.log(jc);
+      ph.stopPhantom(function(){
+        console.log("phantom finished...");
+      })
+  })
+});
