@@ -1,2 +1,5 @@
 TODO:
 Write a post about OO in javascript.
+RabbitMQ - rabbit.js (PUSH|WORKER pusher is scrape, worker is bonanza)
+update pusher to be able to read robots.txt and configure addFetchCondition accordingly
+update bonanza to read from queue and process url using phantom.
