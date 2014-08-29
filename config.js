@@ -9,7 +9,7 @@ config.crawler.userAgent = pkg.name + "-bot v" + pkg.version + " (shanewwarren@g
 config.crawler.interval = 1000;
 
 config.rabbit = {};
-config.rabbit.publishMethod = "PUSH";
-config.rabbit.subscribeMethod = "WORKER";
-config.rabbit.worker = {};
-config.rabbit.worker.prefetch = 1;
+config.rabbit.url = 'amqp://localhost';
+
+
+module.exports = config;
