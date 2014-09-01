@@ -1,7 +1,7 @@
 var pkg = require('./package.json');
 
 var config = {};
-
+config.version = pkg.version;
 
 
 config.crawler = {};

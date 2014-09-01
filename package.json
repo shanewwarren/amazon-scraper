@@ -24,6 +24,7 @@
     "async": "^0.9.0",
     "bl": "^0.9.1",
     "cheerio": "^0.17.0",
+    "commander": "^2.3.0",
     "ent": "^2.0.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.5.1",
@@ -38,6 +39,7 @@
     "rabbit.js": "^0.4.1",
     "should": "^4.0.4",
     "simplecrawler": "^0.3.9",
-    "util": "^0.10.3"
+    "util": "^0.10.3",
+    "winston": "^0.7.3"
   }
 }
